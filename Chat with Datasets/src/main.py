@@ -29,4 +29,7 @@ st.title("🤖 DataFrame Chatbot")
 if "chat_history" not in st.session_state:
     st.session_state.chat_history = []
 
-
+##initiate df in session state
+if 'df' not in st.session_state:
+    st.session_state.df = None
+    
